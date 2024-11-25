@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string,includes,concat</title>
+</head>
+<body>
+    
+    <script>
+        //concat
+        var a="Krishna"
+        var b="Priya"
+        console.log(a+b);
+        console.log(a+" "+b);
+        let c="KP"
+        c="PK"
+        let D="udala"
+        console.log(c.concat(" ",D));
+        console.log(D.concat(c));
+        //includes
+        var ab="Krishnapriya udala "
+        console.log(ab.includes("Kp"));
+        console.log(ab.includes("sai"));
+        console.log(ab.includes("iya "));
+        //slice
+        let ba="123priya"
+        console.log(ba.slice(2,));//3priya
+        // console.log(ba.slice(,5)) //gives uh the error as startindex is mandatory
+        const bb="Priyanaidu";
+        console.log(bb.replace(bb.slice(3,6),"kri"));// slice method is used in replace method it results in prikriaindu
+        console.log(bb.slice(-4,-1));//rik
+        console.log(bb.slice(2,-4))//
+        console.log(bb.slice(-4,6));//rika
+        //split
+        const xy="Javascript is a scripting language";
+        yz=xy.split(" ");
+        yz[0]="meh";
+        console.log(yz);
+        var ca="Javascript@is&awesome!!"
+        cb=ca.split("@");
+        cc=cb.join(" ");
+        cd=cc.split("&");
+        ce=cd.join(" ");
+        console.log(cb,cc,cd,ce);//(2) ['Javascript', 'is&awesome!!'] Javascript is&awesome!! (2) ['Javascript is', 'awesome!!'] Javascript is awesome!!
+        
+        
+    </script>
+</body>
+</html>
